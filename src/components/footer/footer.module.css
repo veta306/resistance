@@ -8,20 +8,22 @@
 .links{
     display: flex;
     width: 100%;
+    padding-top: 10px;
 }
 
 .text {
-    padding: 35px;
+    padding: 40px;
     font-family: 'e-Ukraine';
     font-weight: 700;
-    font-size: 25px;
+    font-size: 28px;
     color: var(--light-text-color);
 }
 
 .link {
-    padding: 35px;
+    padding: 46px;
+    padding-inline: 13px;
     font-family: 'e-Ukraine';
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     color: var(--light-text-color);
     text-decoration: none;
@@ -38,17 +40,17 @@
     width: 100%;
     font-family: 'e-Ukraine';
     font-size: 15px;
-    font-weight: 500px;
+    font-weight: 300px;
     color: var(--light-text-color);
 }
 
 .info {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     width: 100%;
     font-family: 'e-Ukraine';
     font-size: 15px;
-    font-weight: 600px;
+    font-weight: 300px;
     color: var(--light-text-color);
 }

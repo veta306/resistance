@@ -46,3 +46,7 @@
   border: none;
   cursor: pointer;
 }
+
+.language-button:hover {
+  background-color: var(--selected-color);
+}
