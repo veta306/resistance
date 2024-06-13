@@ -1,0 +1,54 @@
+.footer{
+    height: 204px;
+    gap: 100px;
+    padding: 0 240px;
+    background-color: var(--background-color);
+}
+
+.links{
+    display: flex;
+    width: 100%;
+}
+
+.text {
+    padding: 35px;
+    font-family: 'e-Ukraine';
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--light-text-color);
+}
+
+.link {
+    padding: 35px;
+    font-family: 'e-Ukraine';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--selected-color);
+}
+
+.terms {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-family: 'e-Ukraine';
+    font-size: 15px;
+    font-weight: 500px;
+    color: var(--light-text-color);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+    font-family: 'e-Ukraine';
+    font-size: 15px;
+    font-weight: 600px;
+    color: var(--light-text-color);
+}
