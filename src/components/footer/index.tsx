@@ -6,7 +6,7 @@ const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.links}>
-        <div className={styles.text}>Спротив</div>
+        <div className={styles.text}>СПРОТИВ</div>
         <Link to={'/'} className={styles.link}>
           Зашквари
         </Link>

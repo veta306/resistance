@@ -4,6 +4,7 @@ import arrowDown from '../../assets/images/arrow_down.png';
 import styles from './home.module.css';
 import cardImage from '../../assets/images/card_image_example.png';
 import partyLogo from '../../assets/images/party_logo_example.png';
+import Footer from '../../components/footer';
 
 const ratingCards = [
   {
@@ -94,6 +95,7 @@ const HomePage: FC = () => {
           <div className={styles.ratingLine}></div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
