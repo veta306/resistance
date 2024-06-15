@@ -10,7 +10,7 @@ const Footer: FC = () => {
         <Link to={'/'} className={styles.link}>
           Зашквари
         </Link>
-        <Link to={'/'} className={styles.link}>
+        <Link to={'/rating'} className={styles.link}>
           Особи
         </Link>
         <div className={styles.terms}>Privacy Policy Terms of Use</div>
