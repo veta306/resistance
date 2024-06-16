@@ -58,11 +58,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  text-decoration: none;
 }
 
 .rating-card:hover{
     .rating-card-count{
         background-color: var(--selected-color);
+        transition: 0.25s ease-in-out;
     }
 }
 
@@ -111,5 +113,6 @@
 .party-name {
   margin: 0;
   font-family: 'e-Ukraine-Light';
+  color: black;
   font-size: 18px;
 }

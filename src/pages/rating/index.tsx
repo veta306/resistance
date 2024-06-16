@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import styles from './rating.module.css';
@@ -53,7 +54,7 @@ const RatingPage: FC = () => {
           </div>
         </section>
         <section className={styles.rating}>
-          <div className={styles.ratingCards}>
+          <Link to={'/person'} className={styles.ratingCards}>
             {repeatedRatingCards.map((ratingCard, index) => {
               return (
                 <div key={index} className={styles.ratingCard}>
@@ -77,7 +78,7 @@ const RatingPage: FC = () => {
                 </div>
               );
             })}
-          </div>
+          </Link>
         </section>
       </main>
       <Footer />
