@@ -1,13 +1,14 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import styles from './rating.module.css';
 import arrowDown from '../../assets/images/arrow_down.png';
 import cardImage from '../../assets/images/card_image_example.png';
 import partyLogo from '../../assets/images/party_logo_example.png';
+import { PersonCardInfo } from '../../types';
+import PersonCard from '../../components/personCard';
 
-const ratingCards = [
+const ratingCards: PersonCardInfo[] = [
   {
     image: cardImage,
     count: 59,
@@ -54,31 +55,11 @@ const RatingPage: FC = () => {
           </div>
         </section>
         <section className={styles.rating}>
-          <Link to={'/person'} className={styles.ratingCards}>
-            {repeatedRatingCards.map((ratingCard, index) => {
-              return (
-                <div key={index} className={styles.ratingCard}>
-                  <img
-                    src={ratingCard.image}
-                    alt="card image"
-                    className={styles.ratingCardImage}
-                  />
-                  <p className={styles.ratingCardCount}>
-                    {ratingCard.count} ЗАШКВАРІВ
-                  </p>
-                  <p className={styles.ratingCardName}>{ratingCard.name}</p>
-                  <div className={styles.ratingCardParty}>
-                    <img
-                      src={ratingCard.logo}
-                      alt="party logo"
-                      className={styles.partyLogo}
-                    />
-                    <p className={styles.partyName}>{ratingCard.party}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </Link>
+          <div className={styles.ratingCards}>
+            {repeatedRatingCards.map((ratingCard, index) => (
+              <PersonCard key={index} {...ratingCard} />
+            ))}
+          </div>
         </section>
       </main>
       <Footer />

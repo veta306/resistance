@@ -1,29 +1,35 @@
 .footer {
-  height: 204px;
-  gap: 100px;
-  padding: 0 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 240px;
+  gap: 40px;
   background-color: var(--background-color);
 }
 
 .links {
   display: flex;
-  width: 100%;
-  padding-top: 10px;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
 }
 
-.text {
-  padding: 40px;
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.name {
+  margin: 0;
   font-family: 'e-Ukraine-Head-Bold';
   font-size: 24px;
+  margin-right: 20px;
   color: var(--light-text-color);
 }
 
 .link {
-  padding: 45px;
-  padding-top: 42px;
-  padding-inline: 13px;
   font-family: 'e-Ukraine-Regular';
   font-size: 20px;
+  line-height: 26px;
   color: var(--light-text-color);
   text-decoration: none;
 }
@@ -34,9 +40,8 @@
 
 .terms {
   display: flex;
-  align-self: center;
   justify-content: flex-end;
-  width: 100%;
+  gap: 20px;
   font-family: 'e-Ukraine-Regular';
   font-size: 16px;
   color: var(--light-text-color);
@@ -45,8 +50,11 @@
 .info {
   display: flex;
   justify-content: center;
-  padding: 20px;
-  width: 100%;
+  gap: 20px;
+}
+
+.info-row {
+  margin: 0;
   font-family: 'e-Ukraine-Bold';
   font-size: 16px;
   color: var(--light-text-color);
