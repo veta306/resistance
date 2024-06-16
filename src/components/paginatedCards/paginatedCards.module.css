@@ -1,0 +1,78 @@
+.card-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Default pagination styles override */
+.rc-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.rc-pagination-item {
+  display: inline-block;
+  min-width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 8px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.rc-pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+.rc-pagination-item-active {
+  background-color: #d84315;
+  color: white;
+}
+
+.rc-pagination-item-active a {
+  color: white;
+}
+
+.rc-pagination-prev,
+.rc-pagination-next {
+  display: inline-block;
+  min-width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 8px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.rc-pagination-prev:hover,
+.rc-pagination-next:hover {
+  background-color: #f5f5f5;
+}
+
+.rc-pagination-prev:focus,
+.rc-pagination-next:focus {
+  outline: none;
+}
+
+.rc-pagination-disabled {
+  cursor: not-allowed;
+  color: #bfbfbf;
+}

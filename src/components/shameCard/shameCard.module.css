@@ -1,3 +1,7 @@
+.card-link {
+  text-decoration: none;
+}
+
 .shame-card {
   position: relative;
   box-sizing: border-box;
