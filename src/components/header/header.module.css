@@ -43,4 +43,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
+}
+
+.active {
+  color: var(--selected-color);
+  border-bottom: 5px solid var(--selected-color);
+  transition: color 0.3s, border-bottom 0.3s;
 }

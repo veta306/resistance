@@ -1,0 +1,118 @@
+.main {
+  background-image: url('../../assets/images/background.png');
+}
+
+.introduction {
+  padding: 200px 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.sitename {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.name {
+  font-family: 'e-Ukraine-Head-Bold';
+  font-size: 80px;
+  color: var(--light-heading-color);
+}
+
+.whiteLine {
+  width: 100%;
+  margin-top: -80px;
+  height: 6px;
+  background-color: var(--light-heading-color);
+}
+
+.goal {
+  margin: 0;
+  width: 800px;
+  margin-top: -20px;
+  text-align: center;
+  font-family: 'e-Ukraine-Light';
+  font-size: 24px;
+  line-height: 1.7em;
+  color: var(--light-text-color);
+}
+
+.arrows {
+  display: flex;
+  gap: 20px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 80px 240px;
+  background-color: var(--light-text-color);
+}
+
+.rating-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-decoration: none;
+}
+
+.rating-card:hover{
+    .rating-card-count{
+        background-color: var(--selected-color);
+        transition: 0.25s ease-in-out;
+    }
+}
+
+.rating-card {
+  width: 460px;
+  height: 731px;
+}
+
+.rating-card-image {
+  z-index: 1;
+}
+
+.rating-card-count {
+  position: relative;
+  margin: -58px 0 0 0;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  color: var(--light-text-color);
+  font-family: 'e-Ukraine-Head-Bold';
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  line-height: 1.5em;
+}
+
+.rating-card-name {
+  display: table-caption;
+  margin: 20px 0 0 0;
+  font-family: 'e-Ukraine-Head-Bold';
+  font-size: 36px;
+  color: var(--background-color);
+}
+
+.rating-card-party {
+  display: flex;
+  margin: 20px 0 0 0;
+  gap: 10px;
+  align-items: center;
+  line-height: 2em;
+}
+
+.party-logo {
+  width: 18px;
+  height: 18px;
+}
+
+.party-name {
+  margin: 0;
+  font-family: 'e-Ukraine-Light';
+  color: black;
+  font-size: 18px;
+}
