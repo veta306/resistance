@@ -56,3 +56,8 @@
   --selected-color: #de442c;
   letter-spacing: 0.15px;
 }
+
+html {
+  width: 1920px;
+  overflow-x: hidden;
+}
