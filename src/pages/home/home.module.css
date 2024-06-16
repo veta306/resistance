@@ -90,15 +90,18 @@
 
 .rating-button {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 13px;
   align-items: center;
-  padding: 10px 20px;
-  width: 335px;
+  padding: 10px 25px;
+  width: 284px;
   border: none;
   font-family: 'e-Ukraine-Bold';
   font-size: 20px;
   line-height: 1.5em;
   background-color: transparent;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 
@@ -198,6 +201,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .remember-link:hover > .link-text {
@@ -271,15 +275,18 @@
 
 .latest-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 10px 20px;
-  width: 253px;
+  gap: 13px;
+  padding: 10px 25px;
+  width: 210px;
   border: none;
   font-family: 'e-Ukraine-Bold';
   font-size: 20px;
   line-height: 1.5em;
   background-color: transparent;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 
@@ -299,4 +306,3 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-

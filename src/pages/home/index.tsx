@@ -10,6 +10,7 @@ import { Icon } from '@iconify/react';
 import PersonCard from '../../components/personCard';
 import { PersonCardInfo, ShameCardInfo } from '../../types';
 import ShameCard from '../../components/shameCard';
+import { Link } from 'react-router-dom';
 
 const ratingCards: PersonCardInfo[] = [
   {
@@ -114,13 +115,13 @@ const HomePage: FC = () => {
               </p>
             </div>
             <div className={styles.ratingButtons}>
-              <button className={styles.ratingButton}>
+              <Link to={'/rating'} className={styles.ratingButton}>
                 РЕЙТИНГ ЗАШКВАРІВ
                 <Icon
                   icon="fontisto:arrow-right"
                   className={styles.arrowRight}
                 ></Icon>
-              </button>
+              </Link>
             </div>
           </div>
           <div className={styles.ratingCards}>
@@ -150,21 +151,21 @@ const HomePage: FC = () => {
             </p>
           </div>
           <div className={styles.rememberLinks}>
-            <div className={styles.rememberLink}>
+            <Link to={'/shames'} className={styles.rememberLink}>
               <p className={styles.linkText}>ЗАШКВАРИ</p>
               <Icon
                 icon="fontisto:arrow-right"
                 className={styles.linkIcon}
               ></Icon>
-            </div>
+            </Link>
             <div className={styles.thinLine} />
-            <div className={styles.rememberLink}>
+            <Link to={'/rating'} className={styles.rememberLink}>
               <p className={styles.linkText}>ОСОБИ</p>
               <Icon
                 icon="fontisto:arrow-right"
                 className={styles.linkIcon}
               ></Icon>
-            </div>
+            </Link>
           </div>
         </section>
         <section className={styles.latest}>
@@ -178,13 +179,13 @@ const HomePage: FC = () => {
               </p>
             </div>
             <div className={styles.latestButtons}>
-              <button className={styles.latestButton}>
+              <Link to={'/shames'} className={styles.latestButton}>
                 ВСІ ЗАШКВАРИ
                 <Icon
                   icon="fontisto:arrow-right"
                   className={styles.arrowRight}
                 ></Icon>
-              </button>
+              </Link>
             </div>
           </div>
           <div className={styles.latestCards}>

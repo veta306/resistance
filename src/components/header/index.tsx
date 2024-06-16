@@ -1,20 +1,26 @@
 import { FC } from 'react';
 import logo from '../../assets/images/logo.png';
 import styles from './header.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header: FC = () => {
+  const navigate = useNavigate();
   return (
     <header className={styles.header}>
       <div className={styles.links}>
-        <Link to={'/'} className={styles.link}>
+        <Link to={'/shames'} className={styles.link}>
           Зашквари
         </Link>
-        <Link to={'/'} className={styles.link}>
+        <Link to={'/rating'} className={styles.link}>
           Особи
         </Link>
       </div>
-      <img src={logo} alt="logo" className={styles.logo} />
+      <img
+        src={logo}
+        alt="logo"
+        className={styles.logo}
+        onClick={() => navigate('/')}
+      />
       <div className={styles.languages}>
         <button className={styles.languageButton}>УКР</button>
         <button className={styles.languageButton}>EN</button>

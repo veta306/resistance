@@ -8,10 +8,10 @@ const Footer: FC = () => {
       <div className={styles.links}>
         <div className={styles.navLinks}>
           <p className={styles.name}>СПРОТИВ</p>
-          <Link to={'/'} className={styles.link}>
+          <Link to={'/shames'} className={styles.link}>
             Зашквари
           </Link>
-          <Link to={'/'} className={styles.link}>
+          <Link to={'/rating'} className={styles.link}>
             Особи
           </Link>
         </div>
