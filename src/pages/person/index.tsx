@@ -11,14 +11,14 @@ const PersonPage: FC = () => {
       <Header />
       <main className={styles.main}>
         <section className={styles.person}>
-          <div className={styles.personFoto}>
+          <div className={styles.personPhoto}>
             <img src={cardImage} />
           </div>
-          <div className={styles.personInfo}>
-            <div className={styles.name}>
+          <div className={styles.info}>
+            <div className={styles.personName}>
               <p>МАКСИМ ШЕВЧЕНКО</p>
             </div>
-            <div className={styles.info}>
+            <div className={styles.personInfo}>
               <p>
                 Максим Шевченко народився у малому місті. Має вищу освіту з
                 економіик та права. Працює у держслужбі, спеціалізується на
@@ -26,7 +26,12 @@ const PersonPage: FC = () => {
                 фінансового моніторінгу.
               </p>
               <div className={styles.party}>
-                
+                <img
+                  src={partyLogo}
+                  alt="party logo"
+                  className={styles.partyLogo}
+                />
+                <p>Сила народу</p>
               </div>
             </div>
           </div>
