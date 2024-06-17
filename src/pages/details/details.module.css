@@ -69,8 +69,24 @@
   color: var(--light-text-color);
 }
 
-.space {
-  height: 220px;
+.connected {
+  padding: 60px 240px;
+  display: flex;
+  gap: 30px;
+}
+
+.connected-head {
+  margin: 0;
+  font-family: 'e-Ukraine-Head-Bold';
+  font-size: 36px;
+  color: var(--light-text-color);
+}
+
+.connected-persons {
+  width: 1015px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .description {

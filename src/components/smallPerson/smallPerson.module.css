@@ -1,0 +1,30 @@
+.connected-person {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.connected-name {
+  margin: 0;
+  font-family: 'e-Ukraine-Medium';
+  font-size: 20px;
+  line-height: 1.5em;
+  color: var(--light-text-color);
+  white-space: nowrap;
+}
+
+.connected-arrow {
+  display: none;
+  font-size: 18px;
+  transform: rotate(-45deg);
+  color: var(--light-text-color);
+}
+
+.connected-person:hover > .connected-arrow {
+  display: inline-block;
+  color: var(--selected-color);
+}
+.connected-person:hover > .connected-name {
+  color: var(--selected-color);
+}
