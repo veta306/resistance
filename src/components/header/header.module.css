@@ -36,18 +36,20 @@
 }
 
 .language-button {
-  padding: 10px 12px;
+  padding: 10px 12px 6px;
   font-family: 'e-Ukraine-Bold';
   font-size: 16px;
   color: var(--light-text-color);
-  background-color: transparent;
   border: none;
+  border-bottom: 5px solid var(--background-color);
+  background-color: transparent;
   cursor: pointer;
-  box-sizing: border-box;
 }
 
 .active {
   color: var(--selected-color);
-  border-bottom: 5px solid var(--selected-color);
-  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom-color: var(--selected-color);
+  transition:
+    color 0.3s,
+    border-color 0.3s;
 }

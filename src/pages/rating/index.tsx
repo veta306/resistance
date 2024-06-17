@@ -6,7 +6,7 @@ import arrowDown from '../../assets/images/arrow_down.png';
 import cardImage from '../../assets/images/card_image_example.png';
 import partyLogo from '../../assets/images/party_logo_example.png';
 import { PersonCardInfo } from '../../types';
-import PersonCard from '../../components/personCard';
+import PaginatedCards from '../../components/paginatedCards';
 
 const ratingCards: PersonCardInfo[] = [
   {
@@ -32,7 +32,7 @@ const ratingCards: PersonCardInfo[] = [
   },
 ];
 
-const repeatedRatingCards = Array(4).fill(ratingCards).flat();
+const repeatedRatingCards = Array(100).fill(ratingCards).flat();
 
 const RatingPage: FC = () => {
   return (
@@ -55,11 +55,7 @@ const RatingPage: FC = () => {
           </div>
         </section>
         <section className={styles.rating}>
-          <div className={styles.ratingCards}>
-            {repeatedRatingCards.map((ratingCard, index) => (
-              <PersonCard key={index} {...ratingCard} />
-            ))}
-          </div>
+          <PaginatedCards cards={repeatedRatingCards} />
         </section>
       </main>
       <Footer />

@@ -6,6 +6,8 @@ import RatingPage from './pages/rating';
 import PersonPage from './pages/person';
 import './index.css';
 import 'normalize.css';
+import LatestPage from './pages/latest';
+import DetailsPage from './pages/details';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: '/person',
     element: <PersonPage />,
+  },
+  {
+    path: '/shames',
+    element: <LatestPage />,
+  },
+  {
+    path: '/details',
+    element: <DetailsPage />,
   },
 ]);
 
