@@ -1,11 +1,122 @@
 .main {
-  background-image: url('../../assets/images/background.png');
+  background-image: url('../../assets/images/dark_background.png');
 }
 
 .person {
   padding: 200px 176px;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 60px;
 }
+
+.tape {
+  position: absolute;
+  top: 66px;
+  left: 66px;
+}
+
+.personPhoto {
+  background-image: url('../../assets/images/card_image_example.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 509px;
+  height: 731px;
+}
+
+.personInfo {
+  background-image: url('../../assets/images/інформація.png');
+  background-size: 1500px;
+  background-position: -600px -450px;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 731px;
+}
+
+.name {
+  font-family: 'e-Ukraine-Head-Bold';
+  font-size: 80px;
+  padding: 30px 60px;
+  padding-top: 60px;
+}
+
+.info {
+  font-family: 'e-Ukraine-Light';
+  padding: 30px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 40px;
+  padding-top: 0px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 90px;
+}
+
+.party {
+  display: flex;
+  background-color: #e7e7e7;
+  width: 179px;
+  height: 30px;
+  font-size: 18px;
+  align-items: center;
+
+  img {
+    width: 18px;
+    height: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.work {
+  display: flex;
+  background-color: #e7e7e7;
+  width: 530px;
+  height: 30px;
+  font-size: 18px;
+  padding-left: 15px;
+  align-items: center;
+
+  img {
+    width: 18px;
+    height: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.description-socials {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.social {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  border: 1px rgb(31, 31, 31, 0.5) solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social:hover {
+  background-color: var(--selected-color);
+  border: none;
+}
+
+.facebook {
+  font-size: 23px;
+  line-height: 36px;
+}
+
+.social:hover .facebook {
+  color: white;
+}
+

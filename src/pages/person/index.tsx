@@ -2,7 +2,10 @@ import { FC } from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import styles from './person.module.css';
-import cardImage from '../../assets/images/card_image_example.png';
+import Tape from '../../assets/images/Masking Tape - 38.png';
+import partyLogo from '../../assets/images/party_logo_example.png';
+import workLogo from '../../assets/images/ic_sharp-cases.png';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 const PersonPage: FC = () => {
   return (
@@ -10,13 +13,10 @@ const PersonPage: FC = () => {
       <Header />
       <main className={styles.main}>
         <section className={styles.person}>
-          <div className={styles.personFoto}>
-            <img src={cardImage} />
-          </div>
+          <img src={Tape} className={styles.tape} />
+          <div className={styles.personPhoto}></div>
           <div className={styles.personInfo}>
-            <div className={styles.name}>
-              <p>МАКСИМ ШЕВЧЕНКО</p>
-            </div>
+            <div className={styles.name}>МАКСИМ ШЕВЧЕНКО</div>
             <div className={styles.info}>
               <p>
                 Максим Шевченко народився у малому місті. Має вищу освіту з
@@ -24,7 +24,27 @@ const PersonPage: FC = () => {
                 фінансах. Швидко ріс у кар’єрі, ставши начальником відділу
                 фінансового моніторінгу.
               </p>
-              <div className={styles.party}></div>
+              <div className={styles.logos}>
+                <div className={styles.party}>
+                  <img src={partyLogo} />
+                  <p>Сила народу</p>
+                </div>
+                <div className={styles.work}>
+                  <img src={workLogo} />
+                  <p>Начальник відділу фінансового моніторингу</p>
+                </div>
+              </div>
+              <div className={styles.descriptionSocials}>
+                <div className={styles.social}>
+                  <Icon className={styles.facebook} icon="gg:facebook" />
+                </div>
+                <div className={styles.social}>
+                  <Icon className={styles.facebook} icon="gg:facebook" />
+                </div>
+                <div className={styles.social}>
+                  <Icon className={styles.facebook} icon="gg:facebook" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
