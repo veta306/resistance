@@ -8,6 +8,7 @@ import detailedImage from '../../assets/images/detailed_image.png';
 import ShameCard from '../../components/shameCard';
 import { ShameCardInfo } from '../../types';
 import smallCardImage from '../../assets/images/small_card_image_example.png';
+import tape from '../../assets/images/tape.png';
 
 const latestCards: ShameCardInfo[] = [
   {
@@ -112,6 +113,7 @@ const DetailsPage: FC = () => {
             src={detailedImage}
             alt="details"
           />
+          <img src={tape} alt="tape" className={styles.tape} />
           <div className={styles.descriptionDetails}>
             <p className={styles.descriptionText}>
               Максим Шевченко був затриманий та йому пред’явлено звинувачення у
