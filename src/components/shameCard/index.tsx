@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const ShameCard: FC<ShameCardInfo> = (shameCard) => {
   return (
-    <Link to={'/person'} className={styles.cardLink}>
+    <Link to={'/details'} className={styles.cardLink}>
       <div className={styles.shameCard}>
         <div className={styles.shameCardHead}>
           <img src={shameCard.image} alt="portret" />
